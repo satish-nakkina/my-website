@@ -12,7 +12,6 @@ nav{
   background-color: #0082e6;
   height: 80px;
   width:100%;
-  position: fixed;
   top:0;
 }
 label.logo{
@@ -28,7 +27,6 @@ nav ul{
   display:flex;
 }
 nav ul li{
-  display: inline-block;
   line-height: 80px;
   margin:0 5px;
 }
@@ -106,8 +104,9 @@ span{
   border-radius: 3px;
 }
 .gallery{
-  margin-left: 15%;
-  margin-top: 15%;
+  width:80vw;
+  margin: 0 auto;
+  height: 80vh;
 }
 .gallery h1{
   font-size: 50px;
@@ -117,12 +116,16 @@ span{
 }
 .images{
   display: grid;
-  width:1000px;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 0px;
+  grid-template-rows: 20vh 20vh 20vh;
+  grid-gap: 5vh;
 }
 .images img{
-  height:200px;
-  width:300px;
+  
+  width:100%;
+  height:100%;
+}
+@media (max-width:500px){
+
 }
